@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./app.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Index Calc</title>
+</head>
+<body>
+	<div class="min-h-screen" style="background-image: url(./img/beanstalk.webp)">
+		<div class="container bg-rose-400 mx-auto py-5 box-border text-xl min-h-screen font-mono">
+			<div class="flex flex-col items-center pt-4 space-y-4 text-white" >
+				<label class="">Width <input type="text" value="1920" name="" id="width" class="ml-5 text-black outline-transparent py-1 rounded-xl text-center bg-rose-300 border-2 text-white"></label>
+				<label class="">Height <input type="text" value="1080"  name="" id="height" class="ml-3 text-black outline-transparent py-1 rounded-xl text-center bg-rose-300 border-2 text-white"></label>
+				<label class="">Px <input type="text" name="" id="px" class="ml-14 text-black outline-transparent py-1 rounded-xl text-center bg-rose-300 border-2 text-white"></label>
+				<label class="">Factor <input type="text" name="" id="factor" class="mb-2 ml-4 text-black outline-transparent py-1 rounded-xl text-center bg-rose-300 border-2 text-white"></label>
+	
+				<button type="button" id="calc" class="border-2 text-xl font-bold px-6 py-2 rounded-xl cursor-pointer ml-14 hover:border">Calc</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
