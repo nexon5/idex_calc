@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="./app.js" defer></script>
-	<link rel="stylesheet" href="style.css">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<title>Index Calc</title>
 </head>
@@ -18,16 +17,22 @@
 				<h1 class="col-start-1 col-end-4 text-center text-2xl uppercase">Index app</h1>	
 				
 
-					<p class="">Width</p><input type="text" id="width" class=" text-black outline-transparent py-1 rounded-xl text-center bg-[#395C6B] border-2 text-white">
-					<button id="auto" type="button" class="col-start-3 col-end-4 row-start-2 row-end-4 self-center text-white border-2 text-xl font-bold px-6 py-2 rounded-xl cursor-pointer hover:bg-[#306d6b]">Auto</button>
-					<p class="col-start-1 col-end-2">Height</p><input type="text"  id="height" class=" py-1 text-black outline-transparent rounded-xl text-center bg-[#395C6B] border-2 text-white">
+					<p class="pl-2 sm:pl-0">Width</p>
+					<input type="text" id="width" class="sm:w-auto w-[150px] text-black outline-transparent py-1 rounded-xl text-center bg-[#395C6B] border-2 text-white">
 
-					<p class="col-start-1 col-end-2">Px</p>
-					<input type="text" id="px" class="col-start-2 col-end-3  text-black outline-transparent py-1 rounded-xl text-center bg-[#395C6B] border-2 text-white">
-					<button type="button" id="copy" class="text-white border-2 text-xl font-bold px-6 py-2 rounded-xl cursor-pointer hover:bg-[#306d6b]">Copy</button>
+					<button id="auto" type="button" class=" col-start-3 col-end-4 row-start-2 row-end-4 self-center text-white border-2 text-xl font-bold px-6 py-2 rounded-xl cursor-pointer hover:bg-[#306d6b] mr-2 sm:mr-0">Auto</button>
+
+					<p class="pl-2 sm:pl-0 col-start-1 col-end-2">Height</p>
+					
+					<input type="text"  id="height" class="sm:w-auto w-[150px] py-1 text-black outline-transparent rounded-xl text-center bg-[#395C6B] border-2 text-white">
+
+					<p class="col-start-1 col-end-2 pl-2 sm:pl-0">Px</p>
+
+					<input type="text" id="px" class="sm:w-auto w-[150px] col-start-2 col-end-3  text-black outline-transparent py-1 rounded-xl text-center bg-[#395C6B] border-2 text-white">
+					<button type="button" id="copy" class="text-white border-2 text-xl font-bold px-6 py-2 rounded-xl cursor-pointer hover:bg-[#306d6b]  mr-2 sm:mr-0">Copy</button>
 			
 					
-					<p>Factor</p><input type="text" id="factor" class=" text-black outline-transparent py-1 rounded-xl text-center bg-[#395C6B] border-2 text-white">
+					<p class="pl-2 sm:pl-0">Factor</p><input type="text" id="factor" class="sm:w-auto w-[150px] text-black outline-transparent py-1 rounded-xl text-center bg-[#395C6B] border-2 text-white">
 							
 			</div>
 			<p id="info-area" class="invisible my-4 text-yellow-500">undefined</p>
