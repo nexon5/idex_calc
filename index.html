@@ -10,15 +10,28 @@
 </head>
 <body>
 	<div class="min-h-screen" style="background-image: url(./img/beanstalk.webp)">
-		<div class="container bg-rose-400 mx-auto py-5 box-border text-xl min-h-screen font-mono">
-			<div class="flex flex-col items-center pt-4 space-y-4 text-white" >
-				<label class="">Width <input type="text" value="1920" name="" id="width" class="ml-5 text-black outline-transparent py-1 rounded-xl text-center bg-rose-300 border-2 text-white"></label>
-				<label class="">Height <input type="text" value="1080"  name="" id="height" class="ml-3 text-black outline-transparent py-1 rounded-xl text-center bg-rose-300 border-2 text-white"></label>
-				<label class="">Px <input type="text" name="" id="px" class="ml-14 text-black outline-transparent py-1 rounded-xl text-center bg-rose-300 border-2 text-white"></label>
-				<label class="">Factor <input type="text" name="" id="factor" class="mb-2 ml-4 text-black outline-transparent py-1 rounded-xl text-center bg-rose-300 border-2 text-white"></label>
-	
-				<button type="button" id="calc" class="border-2 text-xl font-bold px-6 py-2 rounded-xl cursor-pointer ml-14 hover:border">Calc</button>
+
+		<div class="container bg-[#255957] mx-auto py-5 box-border text-xl min-h-screen font-mono flex flex-col items-center">
+
+			<div class="grid grid-cols-[1fr,2fr,1fr] grid-rows-[repeat(5,48px)] justify-center gap-2 text-white">
+
+				<h1 class="col-start-1 col-end-4 text-center text-2xl uppercase">Index app</h1>	
+				
+
+					<p class="">Width</p><input type="text" id="width" class=" text-black outline-transparent py-1 rounded-xl text-center bg-[#395C6B] border-2 text-white">
+					<button id="auto" type="button" class="col-start-3 col-end-4 row-start-2 row-end-4 self-center text-white border-2 text-xl font-bold px-6 py-2 rounded-xl cursor-pointer hover:bg-[#306d6b]">Auto</button>
+					<p class="col-start-1 col-end-2">Height</p><input type="text"  id="height" class=" py-1 text-black outline-transparent rounded-xl text-center bg-[#395C6B] border-2 text-white">
+
+					<p class="col-start-1 col-end-2">Px</p>
+					<input type="text" id="px" class="col-start-2 col-end-3  text-black outline-transparent py-1 rounded-xl text-center bg-[#395C6B] border-2 text-white">
+					<button type="button" id="copy" class="text-white border-2 text-xl font-bold px-6 py-2 rounded-xl cursor-pointer hover:bg-[#306d6b]">Copy</button>
+			
+					
+					<p>Factor</p><input type="text" id="factor" class=" text-black outline-transparent py-1 rounded-xl text-center bg-[#395C6B] border-2 text-white">
+							
 			</div>
+			<p id="info-area" class="invisible my-4 text-yellow-500">undefined</p>
+			<button id="calc" class="text-white border-2 text-xl font-bold px-6 py-2 rounded-xl cursor-pointer mt-2 hover:bg-[#306d6b]">Calc</button>
 		</div>
 	</div>
 </body>
